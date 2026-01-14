@@ -239,3 +239,14 @@ async def test_assume_role_target_session_forbidden_keys(
                     k: "idc"
                 }
             )
+
+
+def test__serialize_if_needed() -> None:
+    refresh = AIOAssumeRefresh(
+        source_session=aioboto3.Session(),
+        sts_client_kwargs={},
+        assume_role_kwargs={}
+    )
+    dt_str = "2023-06-27T00:00:00"
+    result = refresh._serialize_if_needed(dt_str)
+    assert result == dt_str
