@@ -27,5 +27,5 @@ jobs:
         python -m pip install -e .[dev]
     - name: Test with pytest
       run: |
-        pytest -vvv --cov=src/boto3_assume --cov-report term-missing tests/unit
+        pytest -vvv --cov=src/aioboto3_assume --cov-report term-missing tests/unit
 

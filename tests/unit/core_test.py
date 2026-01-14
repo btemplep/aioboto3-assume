@@ -139,7 +139,8 @@ async def test_refresh_creds(
             "DurationSeconds": 900
         },
         sts_client_kwargs={
-            "endpoint_url": moto_server
+            "endpoint_url": moto_server,
+            "region_name": "us-east-1"
         }
     )
     async with assume_sess.client("sts", endpoint_url=moto_server, region_name="us-east-1") as sts_client:
