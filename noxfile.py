@@ -1,13 +1,11 @@
 
-import sys
-
 import nox
 
 nox.options.sessions = [
     "unit-tests-py"
 ]
 
-@nox.session(name="publish-package")
+@nox.session(name="publish")
 def publish_package(session: nox.Session):
     """Build a new src dist and wheel, then publish to PYPI.
     """
