@@ -18,6 +18,8 @@ $ pip install aioboto3-assume
 
 
 ```python
+import asyncio
+
 import aioboto3
 from aioboto3_assume import assume_role
 
