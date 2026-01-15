@@ -3,7 +3,7 @@
 
 Easily create [aioboto3](https://github.com/terricain/aioboto3) assume role sessions with automatic credential refreshing.
 
-> **NOTE** - For `boto3` support, see [boto3-assume](https://pypi.org/project/aioboto3-assume/).
+> **NOTE** - For `boto3` support, see [boto3-assume](https://pypi.org/project/boto3-assume/).
 
 
 ## Installation
